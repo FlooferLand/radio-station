@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Radio Station"
+run/main_scene="res://scenes/main.tscn"
+run/print_header=false
+config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
+run/low_processor_mode=true
+run/low_processor_mode_sleep_usec=7500
+boot_splash/show_image=false
+config/icon="res://ui/godot.svg"
+
+[audio]
+
+buses/default_bus_layout="res://audio/audio_bus.tres"
+buses/channel_disable_time=5.0
+
+[display]
+
+window/size/viewport_width=1512
+window/size/viewport_height=945
+window/size/window_width_override=1512
+window/size/window_height_override=945
+window/energy_saving/keep_screen_on=false
+window/subwindows/embed_subwindows=false
+
+[dotnet]
+
+project/assembly_name="Radio Station"
+
+[gui]
+
+theme/custom="res://ui/ui.theme"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
